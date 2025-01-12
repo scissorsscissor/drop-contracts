@@ -166,7 +166,7 @@ fn test_reconstruct_balance_and_delegations_with_delegations() {
     });
 
     let result: NeutronResult<BalancesAndDelegations> =
-        PuppeteerReconstruct::reconstruct(&storage_values, "0.0.1");
+        PuppeteerReconstruct::reconstruct(&storage_values, "0.0.2");
     match result {
         Ok(balances_and_delegations) => {
             let expected_coins = vec![cosmwasm_std::Coin {
